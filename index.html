@@ -30,10 +30,85 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
-            <!-- 名前 -->
-            <div class="form_box">
-
+            <div class="name-box">
+              <div class="name-box-child">
+                  <p class="is-defaultText">名字<span>※</span></p>
+                  <input class="is-fullWidth input-area input-area-height" type="text" name="first-name" required>
+              </div>
+              <div class="name-box-child">
+                  <p class="is-defaultText">名前<span>※</span></p>
+                  <input class="is-fullWidth input-area input-area-height" type="text" name="last-name" required>
+              </div>
             </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">性別</p>
+              <div class="gender-content-box">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input"><span>男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input"><span>女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input"><span>その他</span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="padding-box">
+              <p class="is-defaultText">出身</p>
+              <select class="is-halfWidth input-area input-area-height" name="come-from">
+                <option value="pc13">東京</option>
+                <option value="pc12">千葉</option>
+                <option value="pc11">埼玉</option>
+                <option value="pc14">神奈川</option>
+              </select>
+            </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">Eメール<span>※</span></p>
+              <input class="is-fullWidth input-area input-area-height" type="email" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            
+            <div class="padding-box">
+              <p class="is-defaultText">電話番号</p>
+              <input class="is-fullWidth input-area input-area-height" type="tel" name="tel" placeholder="ex) 09012345678">
+            </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">パスワード<span>※</span></p>
+              <input class="is-fullWidth input-area input-area-height" type="password" name="password" required>
+            </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">パスワード(確認用)<span>※</span></p>
+              <input class="is-fullWidth input-area input-area-height" type="password" name="password-confirm" required>
+            </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">希望コース</p>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="frontend" id="frontend"><label class="course-option-text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="backend" id="backend"><label class="course-option-text" for="backend">バックエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="app" id="app"><label class="course-option-text" for="app">アプリ</label>
+              </div>
+            </div>
+
+            <div class="padding-box">
+              <p class="is-defaultText">備考</p>
+              <textarea class="remarks is-fullWidth input-area" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+
+            <div class="padding-box">
+              <input class="is-fullWidth input-init button submit-btn" type="submit" value="アカウント作成">
+            </div>
+
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
